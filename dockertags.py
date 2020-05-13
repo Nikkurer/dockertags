@@ -7,7 +7,6 @@ URL = 'https://registry.hub.docker.com/v1/repositories/{image_name}/tags'
 def get_arguments():
     arg_parser = ArgumentParser(add_help=True, description='Get docker image tags.')
     arg_parser.add_argument('image', help='Image name')
-    # arg_parser.add_argument('--auth', action='store', help='Username:Password')
     return arg_parser.parse_args()
 
 
